@@ -1,0 +1,6 @@
+{
+	"name": "integrationRuntime1SQL",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "ls_SQL_AcadDW",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "AMY-STATION2",
+			"database": "AMY-STATION2",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "USER",
+			"additionalProperties": {
+				"TrustServerCertificate": "true"
+			},
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5MTE2MDgxZi1kMjJhLTQwMmYtOWM5Zi00ZmU4MzdmMDEyY2IiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1SQL",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

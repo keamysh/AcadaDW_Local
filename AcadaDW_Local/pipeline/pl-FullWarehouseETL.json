@@ -1,0 +1,30 @@
+{
+	"name": "pl-FullWarehouseETL",
+	"properties": {
+		"activities": [
+			{
+				"name": "Run_Full_ETL",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "sp_Run_Full_ETL"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_SQL_AcadDW",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-01-11T05:42:03Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
